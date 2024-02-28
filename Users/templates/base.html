@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base Django Template</title>
+    <link rel="stylesheet" href="../../static/css/styles.css">
+    <style>
+        button{
+            padding: 3px;
+            color: rgb(7, 7, 145);
+            border: none;
+            background-color: rgb(94, 92, 92);
+            justify-content: center;
+        }
+        .footer-section{
+            margin: 20px;
+            color: forestgreen;
+            padding: 30px;
+            text-align: center;
+            align-content: center;
+        }
+        .navigation-section{
+            justify-items: center;
+            align-items: center;
+            background-color: darkslategray;
+        }
+    </style>
+</head>
+<body>
+<div class="navigation-section">
+    <button>HOME</button>
+    <button>ABOUT US</button>
+    <button>GALLERY</button>
+    <button>CONTACT</button>
+    <HR>
+</div>
+{% block title %}
+
+
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
+
+
+<section class="footer-section">
+    <h4>This is my footer</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+</section>
+
+
+</body>
+</html>

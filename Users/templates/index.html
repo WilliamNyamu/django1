@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<h2>This is my index page</h2>
+{% endblock %}
+
+{% block content %}
+
+
+
+<hr>
+<h1>FORMS</h1>
+<form  action="" style="border: 3px">
+    <label for="">Username</label>
+    <input type="text" name="username" value="username" placeholder="Enter your username"><br><br>
+    <label for="">Password</label>
+    <input type="password" name="password" value="password" placeholder="Enter your password"><br><br>
+    <input type="submit" value="submit">
+</form>
+<hr>
+<h1 style="text-align: center"><u>Log In form</u></h1>
+<form action="">
+    <label for="">First name</label>
+    <input type="text" name="first name" placeholder="First name">
+    <label for="">Last name</label>
+    <input type="text" name="Last Name" placeholder="Last name"><br><br>
+    <label for="">Age</label>
+    <input type="number" name="age" placeholder="Age(years)"><br><br>
+    <label for="">Password</label>
+    <input type="password" name="password" placeholder="Password"><br><br>
+    <label for="">Confirm Password</label>
+    <input type="password" name="confirm password" placeholder="Confirm password"><br><br>
+    <input type="submit" value="Log In">
+</form>
+<hr>
+<h1>Form</h1>
+<form action="">
+    <input type="text" placeholder="Firstname" name="firstname" value="first name">
+    <input type="text" placeholder="Lastname" name="last name" value="last name"><br><br>
+    AGE: <input type="radio" name="age" checked value="ten"> :(10-20)
+         <input type="radio" name="age" value="twenty"> :(20-30)
+         <input type="radio" name="age" value="thirty"> :(30-40)<br><br>
+    Country:
+    <select name="dropdown" id="">
+        <option value="">Nairobi</option>
+        <option value="">Kisumu</option>
+        <option value="">Machakos</option>
+        <option value="">Kirinyaga</option>
+    </select>
+    <br><br>
+    Education completed:
+    <input type="checkbox" name="education" value="primary"> :Primary
+    <input type="checkbox" name="education" value="secondary"> :Secondary
+    <input type="checkbox" name="education" value="college"> :College
+    <input type="checkbox" name="education" checked value="university"> :University
+    <br><br>
+    <input type="submit" value="SUBMIT" name="submit">
+</form>
+<h1>Web Design and development course</h1>
+<p>.It entails the writing of codes to create good-looking and authentic websites, webportals etc.<br>The writing of codes is done using programming languanges such as html,css,python,django,kotlin,javascript,c c++ and manymore.<br>The most popular programming languages used for creating such websites include:</p>
+<ul>
+    <li><strong>Python</strong></li>
+    <li><strong>Javascript</strong></li>
+    <li><strong>HTML</strong></li>
+    <li><em>CSS</em></li>
+</ul>
+
+
+<p>
+According to the <abbr title="United States of America">U.S</abbr> bureau of labor statistics,web development is projected to rise by 16%gorwth form 2023 to 2024.<br>This is due to the increasing demand in various fields of career
+</p>
+
+
+{% endblock %}

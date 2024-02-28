@@ -1,0 +1,16 @@
+.footer-section{
+    background-color: rgb(9, 246, 64);
+    padding: 50px;
+    margin-top: 2px;
+    margin-bottom: 0;
+    font-size: 22px;
+    font-family: SansSerif;
+}
+.navigation-section{
+    justify-items: center;
+    align-items: center;
+    background-color: darkslategray;
+}
+p{
+    font-weight: bold;
+}
