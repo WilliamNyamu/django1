@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Base Django Template</title>
+    <link rel="stylesheet" href="../../static/css/bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../static/css/styles.css">
     <style>
         button{
@@ -27,13 +28,42 @@
     </style>
 </head>
 <body>
-<div class="navigation-section">
-    <button>HOME</button>
-    <button>ABOUT US</button>
-    <button>GALLERY</button>
-    <button>CONTACT</button>
-    <HR>
-</div>
+ <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">NVIDIA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'index' %}">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about us' %}">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact' %}">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'gallery' %}">GALLERY</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
 {% block title %}
 
 
